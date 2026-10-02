@@ -205,6 +205,7 @@ h2 {
   background: #25d366;
   margin-top: 15px;
   box-shadow: 0 12px 28px rgba(37, 211, 102, .18);
+  transition: .25s ease;
 }
 
 .text-btn {
@@ -267,7 +268,7 @@ h2 {
 
 .tiktok-btn {
   width: 100%;
-  border: 0;
+  border: 1px solid rgba(255,255,255,.13);
   border-radius: 16px;
   padding: 14px 18px;
   cursor: pointer;
@@ -275,14 +276,26 @@ h2 {
   font-family: inherit;
   font-size: 15px;
   font-weight: 800;
-  background: #111;
-  border: 1px solid rgba(255,255,255,.15);
+  background: linear-gradient(135deg, #161616, #050505);
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
   transition: .25s ease;
 }
 
 .tiktok-btn:hover {
   transform: translateY(-2px);
-  background: #1d1d1d;
+  border-color: rgba(255,255,255,.3);
+  box-shadow: 0 14px 30px rgba(0,0,0,.35);
+}
+
+.btn-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 27px;
+  height: 27px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.12);
+  font-size: 14px;
 }
 
 @media (max-width: 480px) {

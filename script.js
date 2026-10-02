@@ -65,9 +65,9 @@ document.querySelectorAll(".choice").forEach(button => {
   button.addEventListener("click", () => {
     selectedMessage = button.dataset.message;
 
-    if (selectedMessage.includes("وأنا كمان")) {
+    if (selectedMessage.includes("وأنا كمان بحبك")) {
       resultIcon.textContent = "🥹❤️";
-      resultTitle.textContent = "بجد؟! ❤️";
+      resultTitle.textContent = "وأنا كمان بحبك؟! ❤️";
       resultText.textContent = "مش عارف أقولك إيه غير إنك فرحتيني جدًا... يمكن دي أجمل كلمة كنت مستني أسمعها منك. 🤍";
     } else if (selectedMessage.includes("محتاجة")) {
       resultIcon.textContent = "🤍";
