@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="رسالة خاصة إلى أريني">
+  <title>رسالة ليكي ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true">
+    <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span>
+  </div>
+
+  <main class="site">
+    <section id="welcome" class="screen active">
+      <div class="card intro-card">
+        <div class="envelope">💌</div>
+        <p class="eyebrow">رسالة خاصة</p>
+        <h1>الرسالة دي ليكي إنتي</h1>
+        <p class="intro-text">في حاجة نفسي أقولها ليكي من فترة...<br>بس المرة دي قررت أقولها بجد ❤️</p>
+        <button id="openBtn" class="primary-btn">فتح الرسالة <span>💌</span></button>
+      </div>
+    </section>
+
+    <section id="letter" class="screen">
+      <div class="card letter-card">
+        <div class="small-heart">♡</div>
+        <p id="typing" class="letter-text"></p>
+        <button id="continueBtn" class="primary-btn hidden">كمّلي ❤️</button>
+      </div>
+    </section>
+
+    <section id="question" class="screen">
+      <div class="card question-card">
+        <div class="big-heart">❤️</div>
+        <p class="eyebrow">وأخيرًا...</p>
+        <h2>أريني، تحبي ندي للحكاية دي فرصة؟</h2>
+        <p class="subtext">اختاري اللي حاساه بجد، ومفيش أي ضغط عليكي 🤍</p>
+
+        <div class="choices">
+          <button class="choice yes" data-message="أنا كمان ❤️">❤️ وأنا كمان</button>
+          <button class="choice think" data-message="محتاجة وقت أفكر 🤍">🤍 محتاجة وقت أفكر</button>
+          <button class="choice no" data-message="لأ، أنا مرتبطة">💔 لأ، أنا مرتبطة</button>
+        </div>
+
+        <p class="privacy-note">اختيارك هيفتح واتساب برسالة جاهزة ليكِ.</p>
+      </div>
+    </section>
+
+    <section id="result" class="screen">
+      <div class="card result-card">
+        <div id="resultIcon" class="result-icon">❤️</div>
+        <h2 id="resultTitle">تمام ❤️</h2>
+        <p id="resultText"></p>
+        <button id="whatsappBtn" class="whatsapp-btn">إرسال على واتساب ↗</button>
+        <button id="backBtn" class="text-btn">الرجوع</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
