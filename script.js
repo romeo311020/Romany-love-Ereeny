@@ -1,4 +1,5 @@
 const whatsappNumber = "201286716976";
+const tiktokProfile = "https://www.tiktok.com/@romany_garges";
 
 const screens = {
   welcome: document.getElementById("welcome"),
@@ -11,6 +12,7 @@ const openBtn = document.getElementById("openBtn");
 const continueBtn = document.getElementById("continueBtn");
 const typing = document.getElementById("typing");
 const whatsappBtn = document.getElementById("whatsappBtn");
+const tiktokBtn = document.getElementById("tiktokBtn");
 const backBtn = document.getElementById("backBtn");
 
 const resultIcon = document.getElementById("resultIcon");
@@ -64,17 +66,17 @@ document.querySelectorAll(".choice").forEach(button => {
     selectedMessage = button.dataset.message;
 
     if (selectedMessage.includes("وأنا كمان")) {
-      resultIcon.textContent = "❤️";
-      resultTitle.textContent = "أحلى رد ❤️";
-      resultText.textContent = "أنا مبسوط إنك قلتي اللي جواكي، ومستني رسالتك على واتساب.";
+      resultIcon.textContent = "🥹❤️";
+      resultTitle.textContent = "بجد؟! ❤️";
+      resultText.textContent = "مش عارف أقولك إيه غير إنك فرحتيني جدًا... يمكن دي أجمل كلمة كنت مستني أسمعها منك. 🤍";
     } else if (selectedMessage.includes("محتاجة")) {
       resultIcon.textContent = "🤍";
       resultTitle.textContent = "براحتك خالص 🤍";
-      resultText.textContent = "خدي وقتك براحتك، أهم حاجة تكوني مرتاحة في قرارك.";
+      resultText.textContent = "خدي وقتك براحتك، ومفيش أي ضغط عليكي. أهم حاجة تكوني مرتاحة في قرارك.";
     } else {
-      resultIcon.textContent = "🤍";
+      resultIcon.textContent = "🌷";
       resultTitle.textContent = "تمام، وأنا مقدّر صراحتك";
-      resultText.textContent = "شكرًا إنك كنتي صريحة معايا، وربنا يسعدك ويكتبلك الخير.";
+      resultText.textContent = "شكرًا إنك كنتي صريحة معايا، وربنا يسعدك ويكتبلك الخير دايمًا.";
     }
 
     showScreen("result");
@@ -84,6 +86,10 @@ document.querySelectorAll(".choice").forEach(button => {
 whatsappBtn.addEventListener("click", () => {
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(selectedMessage)}`;
   window.location.href = url;
+});
+
+tiktokBtn.addEventListener("click", () => {
+  window.open(tiktokProfile, "_blank", "noopener,noreferrer");
 });
 
 backBtn.addEventListener("click", () => {
