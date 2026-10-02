@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="رسالة خاصة إلى أريني">
+  <meta name="theme-color" content="#0c050a">
   <title>رسالة ليكي ❤️</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="hearts" aria-hidden="true">
-    <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span>
+    <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span>
   </div>
 
   <main class="site">
@@ -21,7 +21,7 @@
         <div class="envelope">💌</div>
         <p class="eyebrow">رسالة خاصة</p>
         <h1>الرسالة دي ليكي إنتي</h1>
-        <p class="intro-text">في حاجة نفسي أقولها ليكي من فترة...<br>بس المرة دي قررت أقولها بجد ❤️</p>
+        <p class="intro-text">في حاجة نفسي أقولها ليكي من فترة...<br>والمرة دي قررت أقولها بجد ❤️</p>
         <button id="openBtn" class="primary-btn">فتح الرسالة <span>💌</span></button>
       </div>
     </section>
@@ -37,27 +37,37 @@
     <section id="question" class="screen">
       <div class="card question-card">
         <div class="big-heart">❤️</div>
-        <p class="eyebrow">وأخيرًا...</p>
+        <p class="eyebrow">دلوقتي القرار ليكي</p>
         <h2>أريني، تحبي ندي للحكاية دي فرصة؟</h2>
-        <p class="subtext">اختاري اللي حاساه بجد، ومفيش أي ضغط عليكي 🤍</p>
+        <p class="subtext">اختاري اللي حاساه بجد... ومفيش أي ضغط عليكي 🤍</p>
 
         <div class="choices">
           <button class="choice yes" data-message="وأنا كمان بحبك ❤️">❤️ وأنا كمان بحبك</button>
           <button class="choice think" data-message="محتاجة وقت أفكر 🤍">🤍 محتاجة وقت أفكر</button>
           <button class="choice no" data-message="لأ، أنا مرتبطة">💔 لأ، أنا مرتبطة</button>
         </div>
-
-        <p class="privacy-note">اختيارك هيظهر بشكل مختلف، وتقدري تبعتي ردك على واتساب أو تفتحي تيك توك.</p>
       </div>
     </section>
 
     <section id="result" class="screen">
       <div class="card result-card">
         <div id="resultIcon" class="result-icon">❤️</div>
-        <h2 id="resultTitle">تمام ❤️</h2>
-        <p id="resultText"></p>
-        <div class="contact-buttons"><button id="whatsappBtn" class="whatsapp-btn"><span class="btn-icon">◉</span> ابعتيلي على واتساب</button><button id="tiktokBtn" class="tiktok-btn"><span class="btn-icon">♪</span> ابعتيلي على تيك توك</button></div>
-        <button id="backBtn" class="text-btn">الرجوع</button>
+        <p id="resultEyebrow" class="eyebrow">ردك وصل ❤️</p>
+        <h2 id="resultTitle"></h2>
+        <p id="resultText" class="result-text"></p>
+
+        <div class="contact-buttons">
+          <button id="whatsappBtn" class="contact-btn whatsapp-btn">
+            <span class="contact-icon">☏</span>
+            <span>ابعتيلي على واتساب</span>
+          </button>
+          <button id="tiktokBtn" class="contact-btn tiktok-btn">
+            <span class="contact-icon">♪</span>
+            <span>ابعتيلي على تيك توك</span>
+          </button>
+        </div>
+
+        <button id="backBtn" class="text-btn">الرجوع للاختيارات</button>
       </div>
     </section>
   </main>
